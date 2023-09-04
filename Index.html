@@ -4,25 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio Sesion</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     
-    <form>
+    <main>
+        <section>
+            <h2>Inicio Sesion</h2>
+            <form action="#" method="post" >
 
-        <h2>Inicio Sesion</h2>
-
-        <label for="usuario">Nombre de usuario</label>
-        <input type="text" id="usuario">
-<br>
-<br>                       
-
-        <label for="contrasenia">Contraseña</label>
-        <input type="password" id="contrasenia">
-<br>
-       <input type="submit" name="Enviar" >
-
-    </form>
+              
+                
+        
+                <label for="usuario">Nombre de usuario</label>
+                <input type="text" id="usuario" name="usuario" placeholder="ingrese su usuario" required>
+                               
+        
+                <label for="contrasenia">Contraseña</label>
+                <input type="password" id="contrasenia" name="contraseña" placeholder="ingrese su contrasenia" required>
+        
+                <div class="Registrarse" >
+        
+                    <a href="Registro.html" target="_parent">Registrarse</a>
+        
+                </div>
+        
+               <input type="submit" name="Enviar" >
+        
+            </form>
+        </section>
+    </main>
+    
 
 
 </body>
