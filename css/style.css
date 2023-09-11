@@ -1,5 +1,6 @@
 html {
     height: 100vh;
+    scroll-behavior: smooth;
 }
 
 * {
@@ -11,14 +12,18 @@ html {
 body {
     margin: 0;
     height: 100vh;
+}
+
+/* ESTILOS DE PAGINA VISTA PRINCIPAL--------------------------------------------------------------------------------------------------------------*/
+#body-vista-principal {
+    background-color: #000;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: #111111;
 }
 
-h1, h2, h3, a, p, li, label {
+#body-vista-principal h1,h2,h3,a,p,li,label {
     color: #f7f4f3;
     font-family: 'Merriweather Sans', sans-serif;
 }
@@ -34,42 +39,51 @@ a {
     color: #f7f4f3;
 }
 
-img {
-    width: 300px;
-}
 
 h1 {
-    font-size: 42px;
+    font-size: 38px;
 }
 
+.fa-star {
+    position: absolute;
+    font-size: 30px;
+    color: white;
+}
 
+.fa-star:hover{
+    cursor: pointer;
+    color:#D4AF37; 
+} 
+
+/* ASIDE */
 #aside {
-    height: 97.5%;
+    height: 98%;
+    min-width: 200px;
     width: 15%;
     display: flex;
     flex-direction: column;
-    background-color: #111111;
+    background-color: #000;
     border-radius: 16px;
 }
 
 #nav__ul {
     display: flex;
     flex-direction: column;
-    background-color: #222223;
-    border-radius: 20px;
+    background-color: #111111;
+    border-radius: 16px;
 }
 
 li {
-    margin: 15px 10px;
+    margin: 10px 10px;
 }
 
 li a {
     display: block;
     text-align: center;
-    font-size: 18px;
-    padding: 10px 30px;
+    font-size: 16px;
+    padding: 10px 16px;
     color: white;
-    background-color: #00A75C;
+    background-color: #00a75c;
     border-radius: 36px;
     transition: all 0.3s ease;
 }
@@ -84,60 +98,71 @@ li:first-child a {
 }
 
 #song-playing {
-    margin-top: 15px;
+    position: relative;
+    margin-top: 8px;
     flex-grow: 3;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #222223;
-    border-radius: 20px;
+    background-color: #111111;
+    border-radius: 16px;
+    text-align: center;
 }
 
-#song-playing img{
+
+#song-playing-name {
+    font-size: 22px;
+    margin-bottom: 18px;
+}
+
+#song-playing img {
     margin-top: 0;
     width: 90%;
     align-self: center;
 }
 
-#song-playing p{
-    font-size: 18px;
-    margin-top: 40px;
+#song-playing p {
+    background-color: #1e1d1d;
+    font-size: 16px;
+    margin-top: 20px;
     align-self: center;
     text-align: center;
+    border-radius: 16px;
+    padding: 5px;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
-
-
-
+/* CONTENIDO PRINCIPAL */
 #vista-principal {
-    height: 97.5%;
-    width:calc(100% - 17%);
-    margin-left: 0.7%;
+    height: 98%;
+    width: calc(100% - 16.3%);
+    min-width: 1144px;
+    margin-left: 8px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #222223;
+    background-color: #111111;
     border-radius: 16px;
-
 }
 
 #header__vista-principal {
-    width: 100%;
+    background-color: #111111;
+    padding: 10px 0 10px 0;
     display: flex;
-    justify-content:space-between ;
-    flex-grow: 1;
-}
-
-.title-container {
-    margin: 20px 0 0 20px;
+    width: 100%;
+    height: 80px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    justify-content: space-between;
 }
 
 #user-container {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-right: 30px;
+    margin-right: 20px;
 }
 
 .user-container__user-info {
@@ -145,7 +170,7 @@ li:first-child a {
 }
 
 .user-container__user-info p {
-    font-size: 22px;
+    font-size: 20px;
 }
 
 .user-container__user-info a {
@@ -154,30 +179,84 @@ li:first-child a {
 
 .user-container__user-info a:hover {
     background-color: transparent;
-    color: #00A75C;
+    color: #00a75c;
 }
 
 #profile-img {
-    width: 120px;
-    height: 120px;
+    width: 60px;
+    height: 60px;
 }
-
-
-
-
+.title-container {
+    margin-left: 30px;
+}
 
 #albums {
+    padding: 30px 0px;
+    overflow: auto;
     width: 100%;
-    flex-grow: 3;
     display: grid;
-    grid-template-columns:repeat(3,1fr) ;
-    grid-template-rows:repeat(3,1fr) ;
+    grid-template-columns: repeat(AUTO-FILL,300px);
+    grid-template-rows: repeat(AUTO-FILL, 300px);
+    justify-content: center;
     justify-items: center;
     row-gap: 20px;
-    column-gap: 20px;
 }
 
+::-webkit-scrollbar {
+    width: 6px;
+}
 
+::-webkit-scrollbar-track {
+    background: #1e1d1d;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.album-container {
+    position: relative;
+    text-align: center;
+    background-color: #1e1d1d;
+    border-radius: 16px;
+    padding: 20px;
+    transition: all .3s ease;
+}
+
+.album-container:hover {
+    cursor: pointer;
+    background-color: #2e2d2d;
+}
+
+.album-container img {
+    width: 185px;
+    height: 220px;
+}
+
+.album-container .fa-star{
+    top: 24px;
+    right: 24px;
+}
+
+#song-progress {
+    width: 100%;
+    background-color: #1e1d1d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+
+#song-progress__audio-player {
+    height: 60px;
+    width: 350px;
+}
 
 
 
