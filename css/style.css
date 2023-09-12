@@ -35,7 +35,8 @@ a,
 p,
 li,
 label,
-input {
+input, 
+button {
     color: #f7f4f3;
     font-family: 'Merriweather Sans', sans-serif;
 }
