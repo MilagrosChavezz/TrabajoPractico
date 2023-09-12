@@ -267,6 +267,117 @@ li:first-child a {
     width: 350px;
 }
 
+.formulario {
+
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    box-shadow:0 0 20px  #f7f4f3;
+    border-radius: 10px;
+    
+  
+}
+
+.formulario_titulo {
+    font-size: 24px;
+    margin-top: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    }
+
+.formulario label{
+    padding: 1px;
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: justify;
+    color:#e0e7e4; 
+}
+.formulario input{
+ margin-bottom: 15px;
+ margin-top: 10px;
+ padding: 10px;
+ border: 1.5px solid #1e8a59;
+ border-radius: 20px;
+ outline: none;
+ color:#434a47; 
+ font-size: 15px;
+}
+
+.botton_inicio {
+    background-color: #1e8a59;
+    font-size: 15px;
+    color: #f7f4f3;
+    padding: 14px;
+    border-radius: 30px;
+    margin-bottom: 7px;
+    border: none;
+    cursor: pointer;
+}
+
+.botton_inicio:hover ,.formulario_registro button:hover{
+    background-color: #00A75C;
+
+}
+
+.registrarse_en_el_inicio a {
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    background-color: transparent; 
+    text-decoration: none;
+    color: #00A75C;
+    margin: 10px;
+    text-transform: uppercase;
+}
+
+.registrarse_en_el_inicio:hover a{
+    background-color: transparent;
+    color: #f7f4f3;
+   
+
+}
+.formulario_registro{
+
+    padding: 40px 50px ;
+  
+    display: flex;
+    flex-direction: column;
+    box-shadow:0 0 10px  #f7f4f3;
+    border-radius: 10px;
+
+    }
+
+    .formulario_registro label{
+        padding: 10px;
+        font-size: 14px;
+        margin-top: 5px;
+        text-align: justify;
+        color:#e0e7e4; 
+    } 
+
+    .formulario_registro input{
+        padding: 5px;
+        border: 1.5px solid #1e8a59;
+        border-radius: 20px;
+        outline: none;
+        color:#434a47; 
+        font-size: 13px;
+      
+       
+    } 
+
+    .formulario_registro button{
+        margin-top: 10px;
+        background-color: #1e8a59;
+        font-size: 15px;
+        color: #f7f4f3;
+        padding: 14px;
+        border-radius: 30px;
+        margin-bottom: 7px;
+        border: none;
+        cursor: pointer;
+    }
+
 
 
 
