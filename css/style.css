@@ -12,7 +12,13 @@ html {
 body {
     margin: 0;
     height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #111111;
 }
+
 
 /* ESTILOS DE PAGINA VISTA PRINCIPAL--------------------------------------------------------------------------------------------------------------*/
 #body-vista-principal {
@@ -267,6 +273,7 @@ li:first-child a {
     width: 350px;
 }
 
+
 .formulario {
 
     padding: 50px;
@@ -283,6 +290,8 @@ li:first-child a {
     margin-top: 10px;
     text-align: center;
     text-transform: uppercase;
+    color:#f0f6f3; 
+    font-family: 'Merriweather Sans', sans-serif;
     }
 
 .formulario label{
@@ -292,6 +301,7 @@ li:first-child a {
     text-align: justify;
     color:#e0e7e4; 
 }
+
 .formulario input{
  margin-bottom: 15px;
  margin-top: 10px;
@@ -375,9 +385,7 @@ li:first-child a {
         border-radius: 30px;
         margin-bottom: 7px;
         border: none;
-        cursor: pointer;
-    }
-
-
+        cursor:pointer;
+    }
 
 
