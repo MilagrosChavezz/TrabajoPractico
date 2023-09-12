@@ -115,6 +115,15 @@ li:first-child a {
     margin-bottom: 18px;
 }
 
+.song-playing__img-container {
+    position: relative;
+}
+
+.song-playing__img-container .fa-star {
+    top: 5px;
+    right:  18px;
+}
+
 #song-playing img {
     margin-top: 0;
     width: 90%;
