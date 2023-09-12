@@ -23,7 +23,7 @@ body {
     align-items: center;
 }
 
-#body-vista-principal h1,h2,h3,a,p,li,label {
+#body-vista-principal h1,h2,h3,a,p,li,label,input {
     color: #f7f4f3;
     font-family: 'Merriweather Sans', sans-serif;
 }
@@ -92,7 +92,7 @@ a:hover {
     background-color: #1e8a59;
 }
 
-li:first-child a {
+.current-page a {
     color: #111111;
     background-color: #f7f4f3;
 }
@@ -267,6 +267,28 @@ li:first-child a {
     width: 350px;
 }
 
+/*ESTILOS DE PAGINA VISTA BUSCAR------------------------------------------------------------------------------------------------------------- */
 
+.search-container {
+    position: relative;
+    margin-top: 10px;
+    margin-left: 60px;
+}
 
+.fa-magnifying-glass {
+    position: absolute;
+    color: #f7f4f3;
+    top: 12px;
+    left: 10px;
+}
 
+#search-input {
+    background-color: #2e2d2d;
+    width: 260px;
+    height: 40px;
+    border: none;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: lighter;
+    padding-left: 35px;
+}
