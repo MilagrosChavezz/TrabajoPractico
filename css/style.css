@@ -354,7 +354,7 @@ a:hover {
 }
 
 .botton_inicio:hover,
-.formulario_registro button:hover {
+.formulario_registro button:hover,.botton_premium:hover {
     background-color: #00a75c;
 }
 
@@ -399,8 +399,8 @@ a:hover {
     font-size: 13px;
 }
 
-.formulario_registro button {
-    margin-top: 10px;
+.formulario_registro button  {
+    margin-top: 25px;
     background-color: #1e8a59;
     font-size: 15px;
     color: #f7f4f3;
@@ -410,3 +410,118 @@ a:hover {
     border: none;
     cursor: pointer;
 }
+
+
+/*ESTILOS DE VISTA PREMIUM-----------------------------------------------------------  */
+
+.vista-premium-titulo h1 {
+   
+    font-size: 40px;
+   margin-bottom: 10px;
+    text-transform: uppercase;
+    color: #f0f6f3;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+.vista-premium-titulo h2{
+    font-size: 15px;
+    color:#e0e0e0 ;
+    font-family: 'Merriweather Sans', sans-serif;
+    justify-content: center;
+    text-align: center;
+}
+
+.vista-premium-titulo{
+    margin-bottom: 20px;
+    text-align: center; 
+}
+.contenedor-vista-premium{
+display: flex;
+align-items: center;
+flex-wrap: wrap;
+margin: auto;
+margin: auto;
+max-width: 1200px;
+}
+
+.vista-premium-card{
+    width: 290px;
+    height: 250px;
+    margin: 20px;
+   text-align: center;
+   box-shadow:  3px 15px 5px rgba(0,0,0,0.54);
+    justify-content: center;
+    justify-content: space-between;
+    border-radius: 8px;
+    background-color: #fffcfc;
+    transition: all 0.25s;
+    overflow: hidden;
+
+}
+.vista-premium-card:hover{
+    transform: translateY(-15px);
+box-shadow: 0 12px 16px rgba(0,0,0,0.2);
+
+}
+
+.vista-premium-card h2{
+    justify-content: center;
+    padding: 5px;
+    color: #111111;
+    font-family: 'Merriweather Sans', sans-serif;
+    text-transform: uppercase;
+}
+
+.vista-premium-card h3{
+    justify-content: center;
+    color: #111111;
+    font-family: 'Merriweather Sans', sans-serif;
+    text-transform: uppercase;
+}
+
+
+.vista-premium-card li{
+   text-align: left;
+    color: #111111;
+    font-family: 'Merriweather Sans', sans-serif;
+   
+}
+.vista-premium-card p{
+    margin: 5px;
+    justify-content: center;
+    color: #111111;
+    font-family: 'Merriweather Sans', sans-serif;
+   
+}
+
+.vista-premium-card-listado {
+    list-style: none; 
+}
+
+.vista-premium-card-listado li::before {
+    
+    content: ''; 
+    display: inline-block;
+    width: 20px; 
+    height: 15px; 
+    background-image: url(/img/black-checkmark-png-4.png); 
+    background-size: cover; 
+    margin-right: 10px; 
+}
+
+.botton_premium {
+
+   
+    background-color: #1e8a59;
+    font-size: 15px;
+    color: #f7f4f3;
+    padding: 13px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+
+
+
