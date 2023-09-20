@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Spotilam-Pagar</title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=2.0"/>
+        <link rel="stylesheet" href="css/style.css">
+    </head> 
+
+    <body class= "vista-pagar">
+
+            <header class="Usuario">
+                <div class="Usuario-cerrarsesion">  
+                    <p>Nombre usuario</p>
+                    <a class="cerrar-sesion" href="/logout">Cerrar sesión</a>
+                </div>    
+             <img class="imagen-user" src="img/perfil-generico.png" alt="imagen foto sin perfil" width="50">
+            </header>
+
+        
+            <div class=" Titulo-pagar">
+                <h1 id="titulo">Elegiste el plan (Plan ejemplo)</h1>
+            </div>   
+            
+            <section class="imagen-descripcion">
+                <img id="imagen-descripcion" src="img/placeholder.png" alt="imagen-descripcion" width="350" height="150">
+                <p class="descripcion">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius eveniet, tempore nam dolores distinctio saepe, dignissimos ratione autem, itaque vel voluptate voluptas soluta culpa non et. Rerum dolorum perferendis rem? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi ratione illo quos numquam tempora laboriosam non alias, tempore voluptatem at sed possimus. Expedita inventore ipsam hic! Omnis eius aspernatur voluptas?</p>
+            </section>
+
+            <section class="Formulario-pagar">
+                <form class="formulario" action="">
+
+                    <div class="Columna1">
+                        <label class="Objeto" for="Tarjeta">Nro de tarjeta</label>
+                        <input type="number" id="Tajeta" name="Tajeta" placeholder="Tarjeta">
+
+                        <label class="Objeto" for="CVC">CVC</label>
+                        <input type="number" id="CVC" name="CVC" placeholder="CVC">
+                   
+                    </div>   
+                    
+                    <div class="Columna2">
+                        <label class="Objeto" for="VTO">VTO</label>
+                        <input type="date" id="VTO" name="VTO" >
+                        
+                        <label class="Objeto" for="Nombres y apellidos">Nombres y apellidos</label>
+                        <input type="text" id="Nombres y apellidos" name="Nombres y apellidos" placeholder="Nombres y apellidos">
+                   
+                    </div>
+                    
+                </form>
+
+                    <div class="Botones" id="Formulario-pagar">  
+                        <button class="Boton-Cancelar" type="reset">Cancelar</button>   
+                        <button class="Boton-Pagar" type="submit">Pagar</button>
+                    </div>                
+            </section>
+            
+
+        
+        
+    </body>   
