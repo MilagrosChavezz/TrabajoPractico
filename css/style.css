@@ -37,7 +37,7 @@ a,
 p,
 li,
 label,
-input, 
+input,
 button {
     color: #f7f4f3;
     font-family: 'Merriweather Sans', sans-serif;
@@ -306,10 +306,7 @@ a:hover {
     padding-left: 35px;
 }
 
-
 /*ESTILOS DE INICIO DE SESION/REGISTRO-----------------------------------------------------------  */
-
-
 
 .formulario-index {
     padding: 50px;
@@ -328,7 +325,7 @@ a:hover {
     font-family: 'Merriweather Sans', sans-serif;
 }
 
-.formulario label {
+.formulario label, .label {
     padding: 1px;
     font-size: 14px;
     margin-top: 10px;
@@ -336,7 +333,7 @@ a:hover {
     color: #e0e7e4;
 }
 
-.formulario input {
+.formulario input, .input {
     margin-bottom: 15px;
     margin-top: 10px;
     padding: 10px;
@@ -359,7 +356,8 @@ a:hover {
 }
 
 .botton_inicio:hover,
-.formulario_registro button:hover,.botton_premium:hover {
+.formulario_registro button:hover,
+.botton_premium:hover {
     background-color: #00a75c;
 }
 
@@ -404,7 +402,7 @@ a:hover {
     font-size: 13px;
 }
 
-.formulario_registro button  {
+.formulario_registro button {
     margin-top: 25px;
     background-color: #1e8a59;
     font-size: 15px;
@@ -416,7 +414,6 @@ a:hover {
     cursor: pointer;
 }
 
-
 /*ESTILOS DE VISTA PREMIUM-----------------------------------------------------------  */
 
 .vista-premium-titulo h1 {
@@ -426,19 +423,19 @@ a:hover {
     color: #f0f6f3;
     font-family: 'Merriweather Sans', sans-serif;
 }
-.vista-premium-titulo h2{
+.vista-premium-titulo h2 {
     font-size: 15px;
-    color:#e0e0e0 ;
+    color: #e0e0e0;
     font-family: 'Merriweather Sans', sans-serif;
     justify-content: center;
     text-align: center;
 }
 
-.vista-premium-titulo{
+.vista-premium-titulo {
     margin-bottom: 20px;
-    text-align: center; 
+    text-align: center;
 }
-.contenedor-vista-premium{
+.contenedor-vista-premium {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -447,27 +444,25 @@ a:hover {
     max-width: 1200px;
 }
 
-.vista-premium-card{
+.vista-premium-card {
     width: 290px;
     height: 260px;
     margin: 20px;
     text-align: center;
-    box-shadow:  3px 15px 5px rgba(0,0,0,0.54);
+    box-shadow: 3px 15px 5px rgba(0, 0, 0, 0.54);
     justify-content: center;
     justify-content: space-between;
     border-radius: 8px;
     background-color: #fffcfc;
     transition: all 0.25s;
     overflow: hidden;
-
 }
-.vista-premium-card:hover{
+.vista-premium-card:hover {
     transform: translateY(-15px);
-    box-shadow: 0 12px 16px rgba(0,0,0,0.2);
-
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
 }
 
-.vista-premium-card h2{
+.vista-premium-card h2 {
     justify-content: center;
     padding: 5px;
     color: #111111;
@@ -475,45 +470,40 @@ a:hover {
     text-transform: uppercase;
 }
 
-.vista-premium-card h3{
+.vista-premium-card h3 {
     justify-content: center;
     color: #111111;
     font-family: 'Merriweather Sans', sans-serif;
     text-transform: uppercase;
 }
 
-
-.vista-premium-card li{
+.vista-premium-card li {
     text-align: left;
     color: #111111;
     font-family: 'Merriweather Sans', sans-serif;
-    
 }
-.vista-premium-card p{
+.vista-premium-card p {
     margin: 5px;
     justify-content: center;
     color: #111111;
     font-family: 'Merriweather Sans', sans-serif;
-    
 }
 
 .vista-premium-card-listado {
-    list-style: none; 
+    list-style: none;
 }
 
 .vista-premium-card-listado li::before {
-    
-    content: ''; 
+    content: '';
     display: inline-block;
-    width: 20px; 
-    height: 15px; 
-    background-image: url(/img/black-checkmark-png-4.png); 
-    background-size: cover; 
-    margin-right: 10px; 
+    width: 20px;
+    height: 15px;
+    background-image: url(/img/black-checkmark-png-4.png);
+    background-size: cover;
+    margin-right: 10px;
 }
 
 .botton_premium {
-
     background-color: #1e8a59;
     font-size: 15px;
     color: #f7f4f3;
@@ -536,9 +526,9 @@ a:hover {
     font-size: 15px;
     font-family: 'Merriweather Sans', sans-serif;
     display: flex;
-    justify-content: flex-end; 
+    justify-content: flex-end;
     width: 100%;
-    color:#e0e0e0;
+    color: #e0e0e0;
     margin-top: 0.5%;
     margin-right: 1%;
 }
@@ -559,7 +549,7 @@ a:hover {
     font-family: 'Merriweather Sans', sans-serif;
     display: flex;
     justify-content: flex-start;
-    width: 100%; 
+    width: 100%;
     color: #e0e0e0;
     margin-top: 3%;
     margin-left: -77%;
@@ -591,7 +581,6 @@ a:hover {
     margin-right: 10%;
     padding-left: 30%;
     color: #434a47;
-   
 }
 
 .Columna2 {
@@ -609,7 +598,7 @@ a:hover {
     margin-top: -5%;
     justify-content: center;
     font-family: 'Merriweather Sans', sans-serif;
-    margin-left: -5%;  
+    margin-left: -5%;
 }
 
 .Boton-Cancelar {
@@ -634,23 +623,23 @@ a:hover {
 }
 
 .formulario-pagar {
-    font-family: 'Merriweather Sans', sans-serif; 
-    box-shadow: none; 
+    font-family: 'Merriweather Sans', sans-serif;
+    box-shadow: none;
     display: flex;
-    flex-direction: row; 
+    flex-direction: row;
     justify-content: flex-start;
     margin-left: -50%;
     padding: 50px;
-  }
+}
 
 .Objeto {
     width: 300px;
     font-size: 15px;
-    font-family: 'Merriweather Sans', sans-serif; 
-    margin-top: 5%;   
+    font-family: 'Merriweather Sans', sans-serif;
+    margin-top: 5%;
 }
 
-.formulario-pagar input{
+.formulario-pagar input {
     border-radius: 50px;
     border: none;
     color: #888;
