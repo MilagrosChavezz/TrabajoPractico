@@ -1,0 +1,23 @@
+.search-container {
+    position: relative;
+    margin-top: 10px;
+    margin-left: 60px;
+}
+
+.fa-magnifying-glass {
+    position: absolute;
+    color: #f7f4f3;
+    top: 12px;
+    left: 10px;
+}
+
+#search-input {
+    background-color: #2e2d2d;
+    width: 260px;
+    height: 40px;
+    border: none;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: lighter;
+    padding-left: 35px;
+}
