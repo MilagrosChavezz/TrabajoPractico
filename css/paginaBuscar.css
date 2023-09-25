@@ -21,3 +21,7 @@
     font-weight: lighter;
     padding-left: 35px;
 }
+
+#profile-link:hover {
+    background-color: transparent;
+}
