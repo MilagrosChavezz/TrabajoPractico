@@ -1,0 +1,166 @@
+html {
+    height: 100vh;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    background-color: #111;
+    width: 90vw;
+    height: 80vh;
+    border-radius: 16px;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+a,
+p,
+li,
+label,
+input,
+button {
+    color: #f7f4f3;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+article {
+    display: flex;
+    flex-direction: row;
+}
+
+label {
+    width: 160px;
+    font-weight: bold;
+}
+
+section {
+    margin-left: 150px;
+}
+
+#user-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario-parte1 {
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto;
+}
+
+.formulario-parte2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-container__user-info {
+    margin-right: 30px;
+}
+
+.user-container__user-info p {
+    font-size: 20px;
+}
+
+a {
+    transition: all 0.5s ease;
+}
+
+a:hover {
+    background-color: transparent;
+    color: #00a75c;
+}
+
+#profile-img {
+    width: 60px;
+    height: 60px;
+}
+
+.formulario label {
+    padding: 1px;
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: justify;
+    color: #e0e7e4;
+}
+
+.formulario input {
+    width: 180px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    padding: 5px;
+    border: 1.5px solid #1e8a59;
+    border-radius: 20px;
+    outline: none;
+    color: #434a47;
+    font-size: 15px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0 20px 0 ;
+    width: fit-content;
+}
+
+.links a {
+    margin: 5px 0px;
+    width: auto;
+}
+
+.botones {
+    display: flex;
+    justify-content: space-around;
+    margin: 0px 500px;
+}
+
+.botones a {
+    display: block;
+    text-align: center;
+    padding: 15px 21px;
+    background-color: #00a75c;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.botones a:hover {
+    background-color: #1e8a59;
+    color: white;
+}
+
+.botones button {
+    background-color: #00a75c;
+    font-size: 16px;
+    padding: 15px 21px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+}
+
+.botones button:hover {
+    background-color: #1e8a59;
+}
