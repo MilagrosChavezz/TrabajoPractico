@@ -1,0 +1,72 @@
+
+.formulario-index {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 20px #f7f4f3;
+    border-radius: 10px;
+}
+
+.formulario_titulo {
+    font-size: 24px;
+    margin-top: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #f0f6f3;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+.formulario label, .label {
+    padding: 1px;
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: justify;
+    color: #e0e7e4;
+   font-family: 'Merriweather Sans', sans-serif;
+}
+
+.formulario input, .input {
+    margin-bottom: 15px;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1.5px solid #1e8a59;
+    border-radius: 20px;
+    outline: none;
+    color: #434a47;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 15px;
+}
+
+.botton_inicio {
+    background-color: #1e8a59;
+    font-size: 15px;
+    color: #f7f4f3;
+    padding: 14px;
+    border-radius: 30px;
+    margin-bottom: 7px;
+    border: none;
+    cursor: pointer;
+}
+
+.botton_inicio:hover,
+.formulario_registro button:hover,
+.botton_premium:hover {
+    background-color: #00a75c;
+}
+
+.registrarse_en_el_inicio a {
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    text-decoration: none;
+    color: #00a75c;
+    margin: 10px;
+    font-family: 'Merriweather Sans', sans-serif;
+    text-transform: uppercase;
+}
+
+.registrarse_en_el_inicio:hover a {
+    background-color: transparent;
+    color: #f7f4f3;
+}
