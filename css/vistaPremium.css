@@ -85,8 +85,13 @@
     margin-right: 10px;
 }
 
-.botton_premium {
-    margin-top: 20px;
+.boton-comenzar {
+    display: flex;
+    margin-top: 25px;
+    margin-left: 100px;
+    width: 100px;
+   justify-content: center;
+    
     background-color: #1e8a59;
     font-size: 15px;
     color: #f7f4f3;
@@ -94,6 +99,7 @@
     border-radius: 30px;
     border: none;
     cursor: pointer;
+    text-decoration: none;
 }
 
 #user-container-pagar {
@@ -114,6 +120,18 @@
     width: 60px;
 }
 
-.botton_premium:hover {
+ .boton-comenzar:hover {
     background-color: #00a75c;
+}
+
+header a{
+position: absolute;
+left: 10px;
+top: 10px;
+text-decoration: none;
+}
+
+header a:hover{
+    color: #00a75c;
+    transition: all 0.5s ease;
 }
