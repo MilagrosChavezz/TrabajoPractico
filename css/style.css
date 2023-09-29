@@ -34,3 +34,486 @@ button {
     font-family: 'Merriweather Sans', sans-serif;
 }
 
+ul {
+    list-style-type: none;
+    padding: 0px 10px;
+    margin-top: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #f7f4f3;
+}
+
+h1 {
+    font-size: 38px;
+}
+
+.fa-star {
+    position: absolute;
+    font-size: 30px;
+    color: white;
+}
+
+.fa-star:hover {
+    cursor: pointer;
+    color: #d4af37;
+}
+
+/* ASIDE */
+#aside {
+    height: 98%;
+    min-width: 200px;
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    background-color: #000;
+    border-radius: 16px;
+}
+
+#nav__ul {
+    display: flex;
+    flex-direction: column;
+    background-color: #111111;
+    border-radius: 16px;
+}
+
+li {
+    margin: 10px 10px;
+}
+
+li a {
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px 16px;
+    color: white;
+    background-color: #00a75c;
+    border-radius: 36px;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    background-color: #1e8a59;
+}
+
+.current-page a {
+    color: #111111;
+    background-color: #f7f4f3;
+}
+
+#song-playing {
+    position: relative;
+    margin-top: 8px;
+    flex-grow: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #111111;
+    border-radius: 16px;
+    text-align: center;
+}
+
+#song-playing-name {
+    font-size: 22px;
+    margin-bottom: 18px;
+}
+
+.song-playing__img-container {
+    position: relative;
+}
+
+.song-playing__img-container .fa-star {
+    top: 5px;
+    right: 18px;
+}
+
+#song-playing img {
+    margin-top: 0;
+    width: 90%;
+    align-self: center;
+}
+
+#song-playing p {
+    background-color: #1e1d1d;
+    font-size: 16px;
+    margin-top: 20px;
+    align-self: center;
+    text-align: center;
+    border-radius: 16px;
+    padding: 5px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+/* CONTENIDO PRINCIPAL */
+#vista-principal {
+    height: 98%;
+    width: calc(100% - 16.3%);
+    min-width: 1144px;
+    margin-left: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #111111;
+    border-radius: 16px;
+}
+
+#header__vista-principal {
+    background-color: #111111;
+    padding: 10px 0 10px 0;
+    display: flex;
+    width: 100%;
+    height: 80px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    justify-content: space-between;
+}
+
+#user-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.user-container__user-info {
+    margin-right: 30px;
+}
+
+.user-container__user-info p {
+    font-size: 20px;
+}
+
+.user-container__user-info a {
+    transition: all 0.5s ease;
+}
+
+.user-container__user-info a:hover {
+    background-color: transparent;
+    color: #00a75c;
+}
+
+#profile-img {
+    width: 60px;
+    height: 60px;
+}
+.title-container {
+    margin-left: 30px;
+}
+
+#albums {
+    padding: 30px 0px;
+    overflow: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(AUTO-FILL, 300px);
+    grid-template-rows: repeat(AUTO-FILL, 300px);
+    justify-content: center;
+    justify-items: center;
+    row-gap: 20px;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1e1d1d;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.album-container {
+    position: relative;
+    text-align: center;
+    background-color: #1e1d1d;
+    border-radius: 16px;
+    padding: 20px;
+    transition: all 0.3s ease;
+}
+
+.album-container:hover {
+    cursor: pointer;
+    background-color: #2e2d2d;
+}
+
+.album-container img {
+    width: 185px;
+    height: 220px;
+}
+
+.album-container .fa-star {
+    top: 24px;
+    right: 24px;
+}
+
+#song-progress {
+    width: 100%;
+    background-color: #1e1d1d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+
+#song-progress__audio-player {
+    height: 60px;
+    width: 350px;
+}
+
+/*ESTILOS DE PAGINA VISTA BUSCAR------------------------------------------------------------------------------------------------------------- */
+
+.search-container {
+    position: relative;
+    margin-top: 10px;
+    margin-left: 60px;
+}
+
+.fa-magnifying-glass {
+    position: absolute;
+    color: #f7f4f3;
+    top: 12px;
+    left: 10px;
+}
+
+#search-input {
+    background-color: #2e2d2d;
+    width: 260px;
+    height: 40px;
+    border: none;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: lighter;
+    padding-left: 35px;
+}
+
+
+/*ESTILOS DE INICIO DE SESION/REGISTRO-----------------------------------------------------------  */
+.formulario {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 20px #f7f4f3;
+    border-radius: 10px;
+}
+
+.formulario_titulo {
+    font-size: 24px;
+    margin-top: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #f0f6f3;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+.formulario label {
+    padding: 1px;
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: justify;
+    color: #e0e7e4;
+}
+
+.formulario input {
+    margin-bottom: 15px;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1.5px solid #1e8a59;
+    border-radius: 20px;
+    outline: none;
+    color: #434a47;
+    font-size: 15px;
+}
+
+.botton_inicio {
+    background-color: #1e8a59;
+    font-size: 15px;
+    color: #f7f4f3;
+    padding: 14px;
+    border-radius: 30px;
+    margin-bottom: 7px;
+    border: none;
+    cursor: pointer;
+}
+
+.botton_inicio:hover,
+.formulario_registro button:hover,.botton_premium:hover {
+    background-color: #00a75c;
+}
+
+.registrarse_en_el_inicio a {
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    text-decoration: none;
+    color: #00a75c;
+    margin: 10px;
+    text-transform: uppercase;
+}
+
+.registrarse_en_el_inicio:hover a {
+    background-color: transparent;
+    color: #f7f4f3;
+}
+.formulario_registro {
+    padding: 40px 50px;
+
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 10px #f7f4f3;
+    border-radius: 10px;
+}
+
+.formulario_registro label {
+    padding: 10px;
+    font-size: 14px;
+    margin-top: 5px;
+    text-align: justify;
+    color: #e0e7e4;
+}
+
+.formulario_registro input {
+    padding: 5px;
+    border: 1.5px solid #1e8a59;
+    border-radius: 20px;
+    outline: none;
+    color: #434a47;
+    font-size: 13px;
+}
+
+.formulario_registro button  {
+    margin-top: 25px;
+    background-color: #1e8a59;
+    font-size: 15px;
+    color: #f7f4f3;
+    padding: 14px;
+    border-radius: 30px;
+    margin-bottom: 7px;
+    border: none;
+    cursor: pointer;
+}
+
+
+/*ESTILOS DE VISTA PREMIUM-----------------------------------------------------------  */
+
+.vista-premium-titulo h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: #f0f6f3;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+.vista-premium-titulo h2{
+    font-size: 15px;
+    color:#e0e0e0 ;
+    font-family: 'Merriweather Sans', sans-serif;
+    justify-content: center;
+    text-align: center;
+}
+
+.vista-premium-titulo{
+    margin-bottom: 20px;
+    text-align: center; 
+}
+.contenedor-vista-premium{
+display: flex;
+align-items: center;
+flex-wrap: wrap;
+margin: auto;
+margin: auto;
+max-width: 1200px;
+}
+
+.vista-premium-card{
+    width: 290px;
+    height: 250px;
+    margin: 20px;
+    text-align: center;
+    box-shadow:  3px 15px 5px rgba(0,0,0,0.54);
+    justify-content: center;
+    justify-content: space-between;
+    border-radius: 8px;
+    background-color: #fffcfc;
+    transition: all 0.25s;
+    overflow: hidden;
+
+}
+.vista-premium-card:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0,0,0,0.2);
+
+}
+
+.vista-premium-card h2{
+    justify-content: center;
+    padding: 5px;
+    color: #111111;
+    font-family: 'Merriweather Sans', sans-serif;
+    text-transform: uppercase;
+}
+
+.vista-premium-card h3{
+    justify-content: center;
+    color: #111111;
+    font-family: 'Merriweather Sans', sans-serif;
+    text-transform: uppercase;
+}
+
+
+.vista-premium-card li{
+    text-align: left;
+    color: #111111;
+    font-family: 'Merriweather Sans', sans-serif;
+    
+}
+.vista-premium-card p{
+    margin: 5px;
+    justify-content: center;
+    color: #111111;
+    font-family: 'Merriweather Sans', sans-serif;
+    
+}
+
+.vista-premium-card-listado {
+    list-style: none; 
+}
+
+.vista-premium-card-listado li::before {
+    
+    content: ''; 
+    display: inline-block;
+    width: 20px; 
+    height: 15px; 
+    background-image: url(/img/black-checkmark-png-4.png); 
+    background-size: cover; 
+    margin-right: 10px; 
+}
+
+.botton_premium {
+
+    
+    background-color: #1e8a59;
+    font-size: 15px;
+    color: #f7f4f3;
+    padding: 13px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+
+
+
