@@ -89,7 +89,7 @@ section {
 .formulario-parte1 {
     display: flex;
     flex-direction: column;
-    margin: 50px auto;
+    margin: 40px auto;
 }
 
 .formulario-parte2 {
@@ -143,14 +143,14 @@ a:hover {
 .links {
     display: flex;
     flex-direction: column;
-    margin: 20px 0 20px 0 ;
+    margin: 20px 0 10px 0 ;
     width: fit-content;
 }
 
 .links a {
     margin: 5px 0px;
     width: auto;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .botones {
