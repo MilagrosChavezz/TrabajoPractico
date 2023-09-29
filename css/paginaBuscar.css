@@ -1,25 +1,46 @@
+#header__vista-principal {
+    background-color: #111111;
+    padding: 10px 0 10px 0;
+    width: 100%;
+    height: 80px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    display: grid;
+    grid-template-columns: minmax(700px, 1fr) 1fr;
+}
+
+#user-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 20px;
+    justify-self: end;
+}
+
 .search-container {
     position: relative;
     margin-top: 10px;
     margin-left: 60px;
+    justify-self: end;
 }
 
 .fa-magnifying-glass {
     position: absolute;
     color: #f7f4f3;
-    top: 12px;
+    top: 16px;
     left: 10px;
 }
 
 #search-input {
     background-color: #2e2d2d;
-    width: 260px;
-    height: 40px;
+    width: 320px;
+    height: 50px;
     border: none;
     border-radius: 30px;
-    font-size: 13px;
+    font-size: 15px;
     font-weight: lighter;
     padding-left: 35px;
+    justify-self: center;
 }
 
 #profile-link:hover {
