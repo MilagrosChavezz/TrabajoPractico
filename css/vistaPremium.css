@@ -27,7 +27,7 @@
 
 .vista-premium-card {
     width: 290px;
-    height: 260px;
+    height: 270px;
     margin: 20px;
     text-align: center;
     box-shadow: 3px 15px 5px rgba(0, 0, 0, 0.54);
@@ -86,20 +86,18 @@
 }
 
 .boton-comenzar {
-    display: flex;
-    margin-top: 25px;
-    margin-left: 100px;
-    width: 100px;
-   justify-content: center;
-    
-    background-color: #1e8a59;
-    font-size: 15px;
-    color: #f7f4f3;
-    padding: 10px;
-    border-radius: 30px;
-    border: none;
-    cursor: pointer;
-    text-decoration: none;
+ 
+ text-align: center;
+margin: auto;
+width: 100px;
+justify-content: center;
+ background-color: #1e8a59;
+ font-size: 15px;
+ color: #f7f4f3;
+ padding: 10px;
+ border-radius: 30px;
+cursor: pointer;
+ text-decoration: none;
 }
 
 #user-container-pagar {
