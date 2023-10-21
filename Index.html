@@ -4,28 +4,26 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Iniciar Sesión</title>
-        <link rel="stylesheet" href="./css/inicioSesion.css" />
         <link rel="stylesheet" href="./css/style.css" />
+        <link rel="stylesheet" href="./css/inicioSesion.css" />
     </head>
     <body >
         <main id="main">
             
-            <form class="formulario-index " action="#" method="post">
+            <form class="formulario-index" id="form" name="form" method="get" action="/vista-principal.html">
 
                 <h1 class="formulario_titulo" id="titulo">Inicio Sesion</h1>
-
-                <label class="label" for="usuario">Nombre de usuario</label>
-                <input class="input" type="text" id="usuario" name="usuario" placeholder="Usuario" required="">
+                <label class="label" for="usuario" >Nombre de usuario</label>
+                <input class="input" type="text" id="usuario" name="usuario" placeholder="Usuario">
                 <label class="label" for="contraseña">Contraseña</label>
-                <input class="input" type="password" id="contraseña" name="contraseña" placeholder="Contraseña" required="">
+                <input class="input" type="password" id="contraseña" name="contraseña" placeholder="Contraseña">
 
-                <button class="botton_inicio" type="submit">Iniciar sesión</button>
-                <div class="registrarse_en_el_inicio">
-                    
-                    <a  href="Registro.html" target="_parent">Registrarse</a>
+                <button class="botton_inicio" id="submit">Iniciar sesión</button>
+                <div class="registrarse_en_el_inicio">            
+                    <a href="Registro.html" target="_parent">Registrarse</a>
                 </div>
             </form>
         </main>
-    
      </body>
+    <script src="./js/inicioSesion.js"></script>
 </html>
