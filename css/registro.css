@@ -41,13 +41,11 @@ h1{
     font-size: 14px;
     margin-top: 5px;
     text-align: justify;
-   
 }
 
 .formulario_registro input {
     padding: 5px;
     border: 1.5px solid #1e8a59;
-    color: #999999;
     border-radius: 20px;
     outline: none;
     font-size: 13px;
@@ -65,14 +63,23 @@ h1{
     cursor: pointer;
 }
 
+
+
 a {
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
     text-decoration: none;
     color: #f7f4f3;
+    margin: 10px;
+    font-family: 'Merriweather Sans', sans-serif;
+    text-transform: uppercase;
 }
 
-.formulario_registro button:hover
- {
-    background-color: #00a75c;
+a:hover  {
+    background-color: transparent;
+    color: #00a75c;
 }
 
 
