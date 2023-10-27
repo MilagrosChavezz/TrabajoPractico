@@ -17,6 +17,6 @@ function enviar(event) {
     error.innerHTML = mensaje;
   } else {
     // Si ambos campos están llenos, puedes almacenar el nombre de usuario en el localStorage
-    localStorage.setItem('usuario', usuario.value);
+   sessionStorage.setItem('usuario', usuario.value);
   }
 }

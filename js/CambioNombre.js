@@ -1,4 +1,4 @@
-var guardadoDeUsuario=localStorage.getItem("usuario");
+var guardadoDeUsuario=sessionStorage.getItem("usuario");
 
 if(guardadoDeUsuario){
     let textoACambiar=document.getElementById('nombre-usuario');
