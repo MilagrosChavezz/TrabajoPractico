@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang = "es">
+<html lang="es">
     <head>
-    <meta charset="UTF-8" />
+        <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <script src="https://kit.fontawesome.com/081fbd52cc.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="./css/Favoritos.css" />
         <title>Document - Home</title>
@@ -23,7 +25,10 @@
                 <h3 id="song-playing-name">Eclipse</h3>
                 <div class="song-playing__img-container">
                     <i class="fa-solid fa-star"></i>
-                    <img id="song-playing__img" src="img/PINK-FLOYD-THE-DARK-SIDE-OF-THE-MOON-560x600.png" alt="song-playing" />
+                    <img
+                        id="song-playing__img"
+                        src="img/PINK-FLOYD-THE-DARK-SIDE-OF-THE-MOON-560x600.png"
+                        alt="song-playing" />
                 </div>
                 <p class="song-playing__p">
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum dolorum libero accusamus perspiciatis
@@ -32,129 +37,143 @@
             </section>
         </aside>
         <main id="vista-favoritos">
-                <section id="header__vista-favoritos">
-                    <div class="title-container">
-                        <h1 id="title">CANCIONES FAVORITAS</h1>
+            <section id="header__vista-favoritos">
+                <div class="title-container">
+                    <h1 id="title">CANCIONES FAVORITAS</h1>
+                </div>
+                <div id="user-container">
+                    <div class="user-container__user-info">
+                        <p id="nombre-usuario">Nombre usuario</p>
+                        <a href="index.html">Cerrar sesion</a>
                     </div>
-                    <div id="user-container">
-                        <div class="user-container__user-info">
-                            <p id="nombre-usuario">Nombre usuario</p>
-                            <a href="index.html">Cerrar sesion</a>
-                        </div>
-                        <a href="vista-perfil.html" id="profile-link">
-                            <img id="profile-img" src="img/perfil-generico.png" alt="profile-img" />
-                        </a>
+                    <a href="vista-perfil.html" id="profile-link">
+                        <img id="profile-img" src="img/perfil-generico.png" alt="profile-img" />
+                    </a>
+                </div>
+            </section>
+            <section id="filtrado">
+                <select name="filtro-album" id="filtro-album">
+                    <option value="Todos">Todos los Álbumes</option>
+                    <option value="Dark Side Of The Moon">Dark Side Of The Moon</option>
+                    <option value="Platinum Mix">Platinum Mix</option>
+                    <option value="Mix Propio">Mix Propio</option>
+                </select>
+                <select name="filtro-album" id="filtro-duracion">
+                    <option value="Cualquiera">Cualquier Duración</option>
+                    <option value="180">mas de 3 minutos</option>
+                    <option value="240">mas de 4 minutos</option>
+                </select>
+                <select name="filtro-album" id="filtro-reproducciones">
+                    <option value="Cualquiera">Cualquier cantidad de reproducciones</option>
+                    <option value="5000">mas de 5.000 reproducciones</option>
+                    <option value="10000">mas de 10.000 repdroducciones</option>
+                </select>
+                <button id="filtrar">Filtrar</button>
+            </section>
+
+            <section id="favoritos">
+                <div class="container">
+                    <div id="grilla-titulos"></div>
+                    <div id="grilla-titulos">
+                        <h2 class="Texto-Grilla">CANCIONES</h2>
                     </div>
-                </section>
-                <section id="favoritos" >
-                    <div class="container" >
-                        <div id="grilla-titulos"></div>
-                        <div id="grilla-titulos" >
-                            <h2 class = "Texto-Grilla">CANCIONES</h2>
-                        </div>
-                        <div id="grilla-titulos" >
-                            <h2 class = "Texto-Grilla">ALBUM</h2>
-                        </div>
-                        <div id="grilla-titulos" >
-                            <h2 class = "Texto-Grilla">TIEMPO</h2>
-                        </div>
-                        <div id="grilla-titulos" >
-                            <h2 class = "Texto-Grilla">REPRODUCCIONES</h2>
-                        </div>
+                    <div id="grilla-titulos">
+                        <h2 class="Texto-Grilla">ALBUM</h2>
                     </div>
-                    
-                    <div class ="container">
-                        <div id="grilla-centro" >
-                            <span   span class="material-symbols-outlined">
-                            play_arrow
-                            </span>
-                        </div>
-                        <div class= "grilla-container" id="grilla-centro" >
-                            <i class="fa-solid fa-star"></i>
-                            <h3 class="Texto-Grilla nombre-cancion" >Eclipse</h3>
-                        </div>
-                        <div class= "grilla-container" id="grilla-centro" >
-                            <i class="fa-solid fa-star"></i>
-                            <h3 class= "Texto-Grilla nombre-album">Dark Side Of The Moon</h3>
-                        </div>
-                        <div id="grilla-centro" >
-                            <h3 class= "Texto-Grilla duracion">4:00</h3>
-                        </div>
-                        <div id="grilla-centro" >
-                            <h3 class= "Texto-Grilla reproducciones ">3200</h3>
-                        </div>
+                    <div id="grilla-titulos">
+                        <h2 class="Texto-Grilla">TIEMPO</h2>
                     </div>
-                    <div class="container">
-                        <div id="grilla-centro" >
-                            <span class="material-symbols-outlined">
-                                play_arrow
-                            </span>
-                        </div>
-                        <div class= "grilla-container" id="grilla-centro" >
-                            <i class="fa-solid fa-star"></i>
-                            <h3 class="Texto-Grilla nombre-cancion">Stains Of Time</h3>
-                        </div>
-                        <div class= "grilla-container" id="grilla-centro" >
-                            <i class="fa-solid fa-star"></i>
-                            <h3 class= "Texto-Grilla nombre-album">Platinum Mix</h3>
-                        </div>
-                        <div id="grilla-centro" >
-                            <h3 class= "Texto-Grilla duracion">4:00</h3>
-                        </div>
-                        <div id="grilla-centro" >
-                            <h3 class= "Texto-Grilla reproducciones">27000</h3>
-                        </div>
+                    <div id="grilla-titulos">
+                        <h2 class="Texto-Grilla">REPRODUCCIONES</h2>
                     </div>
-                    <div class="container">
-                        <div id="grilla-centro" >
-                            <span class="material-symbols-outlined">
-                                play_arrow
-                            </span>
-                        </div>
-                        <div class= "grilla-container" id="grilla-centro" >
-                            <i class="fa-solid fa-star"></i>
-                            <h3 class="Texto-Grilla nombre-cancion">International Love</h3>
-                        </div>
-                        <div class= "grilla-container" id="grilla-centro" >
-                            <i class="fa-solid fa-star"></i>
-                            <h3 class= "Texto-Grilla nombre-album">Mix Propio</h3>
-                        </div>
-                        <div id="grilla-centro" >
-                            <h3 class= "Texto-Grilla duracion">4:00</h3>
-                        </div>
-                        <div id="grilla-centro" >
-                            <h3 class= "Texto-Grilla repodrucciones">1200</h3>
-                        </div>
+                </div>
+
+                <div class="container cancion"  data-album="Dark Side Of The Moon" data-duracion="190" data-reproducciones="3200">
+                    <div id="grilla-centro">
+                        <span span class="material-symbols-outlined"> play_arrow </span>
                     </div>
-                    <div class="container">
-                        <div id="grilla-centro" >
-                            <span class="material-symbols-outlined">
-                                play_arrow
-                            </span>
-                        </div>
-                        <div class= "grilla-container" id="grilla-centro" >
-                            <i class="fa-solid fa-star"></i>
-                            <h3 class="Texto-Grilla nombre-cancion">Animals</h3>
-                        </div>
-                        <div class= "grilla-container" id="grilla-centro" >
-                            <i class="fa-solid fa-star"></i>
-                            <h3 class= "Texto-Grilla nombre-album">Mix Propio</h3>
-                        </div>
-                        <div id="grilla-centro" >
-                            <h3 class= "Texto-Grilla duracion">4:00</h3>
-                        </div>
-                        <div id="grilla-centro" >
-                            <h3 class= "Texto-Grilla reproducciones">1500</h3>
-                        </div>
+                    <div class="grilla-container" id="grilla-centro">
+                        <i class="fa-solid fa-star"></i>
+                        <h3 class="Texto-Grilla nombre-cancion">Eclipse</h3>
                     </div>
-                    
-                </section>
-                <section id="song-progress-favoritos">
-                    <audio id="song-progress__audio-player" controls></audio>
-                </section>
+                    <div class="grilla-container" id="grilla-centro">
+                        <i class="fa-solid fa-star"></i>
+                        <h3 class="Texto-Grilla nombre-album">Dark Side Of The Moon</h3>
+                    </div>
+                    <div id="grilla-centro">
+                        <h3 class="Texto-Grilla duracion">3:10</h3>
+                    </div>
+                    <div id="grilla-centro">
+                        <h3 class="Texto-Grilla reproducciones">3200</h3>
+                    </div>
+                </div>
+
+                <div class="container cancion" data-album="Platinum Mix" data-duracion="145" data-reproducciones="27000">
+                    <div id="grilla-centro">
+                        <span class="material-symbols-outlined"> play_arrow </span>
+                    </div>
+                    <div class="grilla-container" id="grilla-centro">
+                        <i class="fa-solid fa-star"></i>
+                        <h3 class="Texto-Grilla nombre-cancion">Stains Of Time</h3>
+                    </div>
+                    <div class="grilla-container" id="grilla-centro">
+                        <i class="fa-solid fa-star"></i>
+                        <h3 class="Texto-Grilla nombre-album">Platinum Mix</h3>
+                    </div>
+                    <div id="grilla-centro">
+                        <h3 class="Texto-Grilla duracion">2:25</h3>
+                    </div>
+                    <div id="grilla-centro">
+                        <h3 class="Texto-Grilla reproducciones">27000</h3>
+                    </div>
+                </div>
+
+                <div class="container cancion" data-album="Mix Propio" data-duracion="195" data-reproducciones="7200">
+                    <div id="grilla-centro">
+                        <span class="material-symbols-outlined"> play_arrow </span>
+                    </div>
+                    <div class="grilla-container" id="grilla-centro">
+                        <i class="fa-solid fa-star"></i>
+                        <h3 class="Texto-Grilla nombre-cancion">International Love</h3>
+                    </div>
+                    <div class="grilla-container" id="grilla-centro">
+                        <i class="fa-solid fa-star"></i>
+                        <h3 class="Texto-Grilla nombre-album">Mix Propio</h3>
+                    </div>
+                    <div id="grilla-centro">
+                        <h3 class="Texto-Grilla duracion">3:15</h3>
+                    </div>
+                    <div id="grilla-centro">
+                        <h3 class="Texto-Grilla repodrucciones">7200</h3>
+                    </div>
+                </div>
+
+                <div class="container cancion" data-album="Mix Propio" data-duracion="255" data-reproducciones="11500">
+                    <div id="grilla-centro">
+                        <span class="material-symbols-outlined"> play_arrow </span>
+                    </div>
+                    <div class="grilla-container" id="grilla-centro">
+                        <i class="fa-solid fa-star"></i>
+                        <h3 class="Texto-Grilla nombre-cancion">Animals</h3>
+                    </div>
+                    <div class="grilla-container" id="grilla-centro">
+                        <i class="fa-solid fa-star"></i>
+                        <h3 class="Texto-Grilla nombre-album">Mix Propio</h3>
+                    </div>
+                    <div id="grilla-centro">
+                        <h3 class="Texto-Grilla duracion">4:15</h3>
+                    </div>
+                    <div id="grilla-centro">
+                        <h3 class="Texto-Grilla reproducciones">11500</h3>
+                    </div>
+                </div>
+
+            </section>
+            <section id="song-progress-favoritos">
+                <audio id="song-progress__audio-player" controls></audio>
+            </section>
         </main>
     </body>
     <script src="./js/CambioNombre.js"></script>
     <script src="./js/CancionesFavoritas.js"></script>
 </html>
-
