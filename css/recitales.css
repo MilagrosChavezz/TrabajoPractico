@@ -8,6 +8,9 @@
     justify-content: center;
     align-items: center;
 }
+.vista-principal{
+margin-top: -10%;
+}
 
 .titulo {
     font-size: 35px;
@@ -49,4 +52,12 @@
 .recitales_slider_inner img {
     width: 100%;
     height: auto;
+}
+
+.user-container {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    right: 1%;
+    
 }
