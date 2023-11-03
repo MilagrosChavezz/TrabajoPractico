@@ -306,3 +306,11 @@ a:hover {
     cursor: pointer;
     color: #00a75c;
 }
+
+@media screen and (max-width: 1367px){
+
+    #favoritos {
+        grid-auto-rows: 110px;
+    }
+    
+}
