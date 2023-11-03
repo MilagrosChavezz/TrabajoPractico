@@ -34,3 +34,19 @@
 .hidden {
     display: none;
 }
+
+.recitales_slider {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.recitales_slider_inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.recitales_slider_inner img {
+    width: 100%;
+    height: auto;
+}
