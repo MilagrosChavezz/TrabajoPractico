@@ -4,6 +4,12 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <script src="https://kit.fontawesome.com/081fbd52cc.js" crossorigin="anonymous"></script>
+
+        <link href='fullcalendar/core/main.css' rel='stylesheet' />
+        <link href='fullcalendar/daygrid/main.css' rel='stylesheet' />
+        <script src='fullcalendar/core/main.js'></script>
+        <script src='fullcalendar/daygrid/main.js'></script>
+
         <link rel="stylesheet" href="./css/paginaPrincipal.css" />
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="css/recitales.css" />
@@ -21,7 +27,7 @@
         <aside id="aside">
             <nav id="aside__nav" class="nav">
                 <ul id="nav__ul">
-                    <li class="ul__li "><a href="vista-principal.html">Home</a></li>
+                    <li class="ul__li"><a href="vista-principal.html">Home</a></li>
                     <li class="ul__li"><a href="vista-buscar.html">Buscar</a></li>
                     <li class="ul__li"><a href="vista-albums.html">Mis albums</a></li>
                     <li class="ul__li"><a href="Canciones-Favortias.html">Mis favoritos</a></li>
@@ -32,7 +38,10 @@
                 <h3 id="song-playing-name">Nombre de la canción</h3>
                 <div class="song-playing__img-container">
                     <i class="fa-solid fa-star"></i>
-                    <img id="song-playing__img" src="img/PINK-FLOYD-THE-DARK-SIDE-OF-THE-MOON-560x600.png" alt="song-playing" />
+                    <img
+                        id="song-playing__img"
+                        src="img/PINK-FLOYD-THE-DARK-SIDE-OF-THE-MOON-560x600.png"
+                        alt="song-playing" />
                 </div>
                 <p class="song-playing__p">
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum dolorum libero accusamus perspiciatis
@@ -41,30 +50,15 @@
             </section>
         </aside>
         <main class="vista-principal">
-            <section id="header__vista-principal">
-                <div class="title-container">
-                    <h1 id="title">SPOTILAM</h1>
-                </div>
-                <div class="user-container">
-                    <div class="user-container__user-info">
-                        <p id="nombre-usuario">Nombre usuario</p>
-                        <a href="index.html">Cerrar sesion</a>
-                    </div>
-                    <a href="vista-perfil.html" id="profile-link">
-                        <img id="profile-img" src="img/perfil-generico.png" alt="profile-img" />
-                    </a>
+            <section class="recitales_slider">
+                <div class="recitales_slider_inner">
+                    <img src="/img/slider3.png" alt="" id="i3" />
+                    <img src="/img/slider2.png" alt="" id="i2" />
+                    <img src="/img/slider4.png" alt="" id="i4" />
+                    <img src="/img/slider1.png" alt="" id="i1" />
                 </div>
             </section>
-            <div class="recitales_slider">
-            <div class="recitales_slider_inner">
-                <img src="/img/slider1.png" alt="" id="i1">
-                <img src="/img/slider2.png" alt="" id="i2">
-                <img src="/img/slider3.png" alt="" id="i3">
-                <img src="/img/slider4.png" alt="" id="i4"> 
-            </div>
-            <section id="calendario">
-            </div>
-            </section>
+            <article id="calendario"></article>
         </main>
     </body>
     <script src="./js/CambioNombre.js"></script>
