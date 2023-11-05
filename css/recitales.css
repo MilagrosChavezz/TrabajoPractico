@@ -1,5 +1,23 @@
+html {
+    height: 180vh;
+}
+
+#body-vista-principal{
+    height: 180vh;
+    align-items: flex-start;
+}
+
+#aside {
+    height: auto;
+    margin: 10px 0px 0px 5px;
+}
+
+main {
+    margin: 10px;
+}
+
 .pop-up {
-    position: absolute;
+    position: fixed;
     z-index: 100;
     width: 450px;
     height: 250px;
@@ -8,10 +26,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
-.vista-principal{
-margin-top: -10%;
-}
+
 
 .titulo {
     font-size: 35px;
@@ -61,4 +80,30 @@ margin-top: -10%;
     position: relative;
     right: 1%;
     
+}
+
+#calendario {
+    max-width: 100%;
+    max-height: 300px;
+    color: white;
+}
+
+.fc-content {
+    background-color: #00a75c;
+    transition: .2s ease all;
+    padding: 3px;
+}
+
+.fc-content:hover {
+    background-color:white;
+    color: #000;
+    cursor: pointer;
+}
+
+.fc-event {
+    border: none;
+}
+
+.fc-event:hover {
+    border: none;
 }
